@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title> 
+</head>
+<body>
+    <div class="main" >
+        <div class="left-bar">
+            <div id = "profile">
+                <img src = "">
+            </div>
+
+            <div>
+                <p id = "about">
+                    About Muzaffar Maxkamov/ Yuri Yurov. Hello dear visitor, welcome to our website! We are a duo of ambitious
+                    programmers who have collaborated our ideas for future applications.
+                    Our applications tailor your needs in a considerate fashion. We are 
+                    perfecting our present for the creation of a beautiful future for us and
+                    for others. Our knowledge does not consist of only IT but we are well-
+                    versed in other aspects of life that we use for the perfection of our ideas.
+                </p>
+            </div>
+            <div>
+                <div class="photo1">
+                    <img src = "pingpongscreen.JPG" alt = "pingpong" >
+                </div>
+                <p id="name">Ping-Pong</p>
+                <p id = "text1"> Our first collaborative project features
+                    a python ping-pong game. We have used
+                    the framework “Django” featured with
+                    Python, html, css and javascript in 
+                    order to create this project. </p>
+
+                <div class ="py-button"><input type ="button" id ="script" name="scriptbutton" value =" Run script " onclick="gotoPython()"></input></div>
+            </div>
+
+            <div>
+                <div class = "photo2">
+                    <img src = "" alt = "calculator">
+                </div>
+                <p id="name2">Calculator</p>
+                <p id = "text2"> Our second collaborative project
+                    features a visual calculator that
+                    is more efficient and fun to use. 
+                    We have utilized the framework Django featuing python, html, css and javascript for
+                    the coding process</p>
+
+                <div class = "py-button2"><input type = "button" id = "script2" name = "scriptbutton2" value = " Run script 2" onclick = "gotoPython2()"></input></div>
+            
+            </div>
+
+            <div>
+                <div class = "photo3">
+                    <img src = "russianroulette.jpg" alt = "russianroulette">
+                </div>
+                <p id="name3">Russian Roulette</p>
+                <p id = "text3"> Our third collaborative work consists
+                    an interactive Russian Roulette game!
+                    The rules follow the classical method.
+                    How lucky are you? Try it out with this 
+                    simple program.
+                    We have used the framework Django 
+                    featuring python, html, css and 
+                    javascript for a visual interface for
+                    more intuitive usage </p>
+
+                <div class = "py-button3"><input type = "button" id = "script3" name = "scriptbutton3" value = " Run script 3" onclick = "gotoPython3()"></input></div>
+            
+            </div>
+
+            <div>
+            </div>
+
+        </div>
+
+        <div class="right-bar">
+        </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+ 
+    <script>
+        function gotoPython(){
+            $.ajax({
+            url: "/python_file",
+            context: document.body
+            }).done(function() {
+            alert('finished python script');;
+            });
+        }
+    </script>
+
+
+
+</body>
+
+<style>
+    
+.main{
+
+    margin:auto;
+    position: relative;
+    top: 10px;
+    height: 1000px;
+    width: 1500px;
+    background-color: red;
+    
+
+}
+
+#about{
+    float: left;
+    color: whitesmoke;
+    position: relative;
+    top:100px;
+    left:580px;
+    width: 400px;
+
+
+}
+.left-bar{
+    background-color:black;
+    position: relative;
+    top : 20px;
+    left: 30px;
+    height: 900px;
+    width: 1000px;
+    z-index: 0;
+}
+
+.right-bar{
+    background-color:blue;
+    position: relative;
+    bottom : 880px;
+    right: 30px;
+    height: 900px;
+    width: 400px;
+    z-index: 0;
+    float:right;
+}
+
+.py-button{
+    position: relative;
+    top:-70px;
+    left:-130px;
+    z-index: 1;
+    color:green;
+}
+
+.py-button2{
+    position: relative;
+    top:-25px;
+    left:-130px;
+    z-index: 1;
+    color:green;
+}
+
+.py-button3{
+    position: relative;
+    top:20px;
+    left:-160px;
+    z-index: 1;
+    color:green;
+}
+
+#text1{
+    float: left;
+    color: white;
+    position: relative;
+    top:-270px;
+    left:220px;
+    width: 200px;
+}
+
+#text2{
+    float: left;
+    color: white;
+    position: relative;
+    top:-242px;
+    left:220px;
+    width: 200px;
+}
+
+#text3{
+    float: left;
+    color: white;
+    position: relative;
+    top:-220px;
+    left:180px;
+    width: 200px;
+}
+
+#profile{
+    position: relative;
+    top:30px;
+    left:730px;
+    height: 200px;
+    width: 200px;
+    background-color:blue;
+
+
+}
+.photo1{
+    position: relative;
+    top:-100px;
+    left:30px;
+    height: 200px;
+    width: 200px;
+    background-color:blue;
+
+}
+
+.photo2{
+    position: relative;
+    top:-60px;
+    left:30px;
+    height: 200px;
+    width: 200px;
+    background-color:blue;
+}
+
+.photo3{
+    position: relative;
+    top:-10px;
+    left:30px;
+    height: 200px;
+    width: 200px;
+    background-color:blue;
+}
+#name{
+    float: left;
+    color: white;
+    position: relative;
+    top:-85px;
+    left:30px;
+}
+body {
+    
+    background-color: white;
+}
+
+#name2{
+
+    float: left;
+    color: white;
+    position: relative;
+    top:-40px;
+    left:30px;
+}
+
+#name3{
+    float: left;
+    color: white;
+    position: relative;
+    top:5px;
+    left:30px;
+}
+
+</style> 
+
+</html>
